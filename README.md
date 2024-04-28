@@ -16,7 +16,7 @@
 git clone https://github.com/IvanKazakov2352/AI-Chat.git
 ```
 2) У вас должен быть предварительно установлен NodeJS и npm, pnpm <a href="https://nodejs.org/" target="_blank">Node JS</a>
-3) Установить зависимости для приложения Чат
+3) Установить зависимости для приложения
 ```bash
 pnpm install
 ```
