@@ -6,8 +6,8 @@
 
 1) Установить LM Studio! <a href="https://lmstudio.ai/" target="_blank">LM Studio</a> Поддерживает: Linux, Windows, MacOS
 2) Запустить приложение LM Studio с рабочего стола!
-3) На странице Home выбрать интересующую вас модель с данными и скачать ее!
-4) Во вкладке Local Server выбрать модель для работы сервера и нажать кнопку `Start Server`.
+3) На странице `Home` выбрать интересующую вас модель с данными и скачать ее!
+4) Во вкладке `Local Server` выбрать модель для работы сервера и нажать кнопку `Start Server`.
 
 # Chat App
 
@@ -15,7 +15,7 @@
 ```bash
 git clone https://github.com/IvanKazakov2352/AI-Chat.git
 ```
-2) У вас должен быть предварительно установлен NodeJS и npm, pnpm <a href="https://nodejs.org/" target="_blank">Node JS</a>
+2) У вас должен быть предварительно установлен <a href="https://nodejs.org/" target="_blank">Node JS</a> и npm, <a href="https://pnpm.io/" target="_blank">pnpm</a>
 3) Установить зависимости для приложения
 ```bash
 pnpm install
