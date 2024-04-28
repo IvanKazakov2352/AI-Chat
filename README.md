@@ -1,7 +1,9 @@
 # AI Chat написанный на VUE 3 + TypeScript с использованием LM Studio
 
 Автор чата: Иван Казаков! <a href="https://ikazakov.com/" target="_blank">Мой сайт</a>
+
 Чат использует модели от <a href="https://huggingface.co/" target="_blank">Hugging Face</a>
+
 Hugging Face - это огромная база бесплатных и доступных моделей каждому пользователю! Плюс имеется хорошее API разных Языков программирования! Тут хранатся модели таких компаний как Intel, Microsoft, Google, Open AI и другие!
 
 # LM Studio
