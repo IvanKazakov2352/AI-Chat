@@ -1,15 +1,12 @@
 <template>
-  <div class="app-messages">
-    <div v-for="item in messages" :key="item.content" class="app-messages__item" id="app-messages__item">
+  <div class="app-messages" id="app-messages">
+    <div v-for="item in messages" :key="item.id" class="app-messages__item" id="app-messages__item">
       <div class="app-messages__type">
         <p class="app-messages__paragraph">{{ item.role === 'user' ? 'USER' : 'AI' }}</p>
       </div>
-      <pre class="app-messages__text">{{ replace(item.content) }}</pre>
-      <!-- <VCodeBlock 
-        :code="replace(item.content)"
-        prismjs
-        theme="neon-bunny"
-      /> -->
+      <pre class="app-messages__text">
+        {{ replace(item.content) }}
+      </pre>
     </div>
   </div>
 </template>
@@ -17,13 +14,12 @@
 import { computed } from 'vue';
 import { useStore } from 'vuex'
 import { Message } from '../models/models';
-import VCodeBlock from '@wdns/vue-code-block';
 const store = useStore()
 
 const messages = computed<Message[]>(() => store.state.messages)
 
 const replace = (content: string) => {
-  return content.replaceAll('<|im_end|>', ' ').replaceAll('````', ' ').replaceAll('<|im_start|>', ' ')
+  return content.replaceAll('<|im_end|>', ' ').replaceAll('<|im_start|>', ' ').replaceAll('<|eot_id|>', ' ')
 }
 </script>
 <style scoped lang="scss">
@@ -52,7 +48,8 @@ const replace = (content: string) => {
       margin: 0;
       word-break: normal;
       padding-left: 16px;
-      white-space: pre-line;
+      overflow-x: auto;
+      white-space: pre-wrap;
       text-align: left;
       text-indent: each-line;
     }
